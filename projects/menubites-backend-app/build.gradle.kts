@@ -44,6 +44,7 @@ dependencies {
 	implementation("org.springframework.security:spring-security-config:6.2.1")
 	implementation("org.springframework.security:spring-security-oauth2-jose:6.2.1")
 
+
 	//Test
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 	testImplementation("org.springframework.boot:spring-boot-testcontainers")
