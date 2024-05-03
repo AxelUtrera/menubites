@@ -8,6 +8,5 @@
   font-synthesis: none;
   text-rendering: optimizeLegibility;
 
-  --color-gradient:{background-image: linear-gradient(to right, #F82E2E, #FF6B00)}
-
+  --color-gradient: linear-gradient(to right, #F82E2E, #FF6B00);
 }
