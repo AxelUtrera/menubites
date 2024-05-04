@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css'
 import '../index.css'
-import {Box, Button, Center, Container, Flex, Grid, GridItem, Text} from "@chakra-ui/react";
+import {Text} from "@chakra-ui/react";
 import logoSVG from '../assets/img/Logo.svg'
 
 
@@ -56,7 +56,7 @@ const Logo = () => {
     return (
         <div id='logo-box'>
             <img src={logoSVG} alt="MenuBites logo"/>
-            <div id='letters-logo' w='80px' marginLeft='10px'>
+            <div id='letters-logo' w='80px' marginleft='10px'>
                 <Text fontFamily="Lobster" fontSize='20px'>
                     MenuBites
                 </Text>
