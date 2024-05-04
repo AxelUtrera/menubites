@@ -1,0 +1,102 @@
+
+.buttonLink {
+    font-family: Ubuntu;
+    color: var(--black-color);
+    font-size: 16px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.buttonLink:hover {
+    border-bottom: 1px solid var(--black-color);
+}
+
+#header-container{
+    width: 90%;
+    margin-top: 55px;
+}
+
+#header-items-container{
+    width: 100%;
+    display: flex;
+}
+
+#nav-buttons{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+#logo-box{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+#letters-logo{
+    display: grid;
+    place-items: center;
+    margin-left: 10px;
+}
+
+.nav-button{
+    display: grid;
+    place-content: center;
+}
+
+#button-join-now-header{
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+    float: right;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#button-join-now-header:hover{
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(to right, #e01111, #e76101);
+}
+
+
+@media screen and (max-width: 600px) {
+    #nav-buttons{
+        display: none;
+    }
+
+    #header-container{
+        max-height: 120px;
+    }
+
+    #header-items-container{
+        justify-items: center;
+    }
+
+    #logo-box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #logo-box img{
+        width: 50px;
+        height: auto;
+    }
+
+    #letters-logo{
+        margin-left: 0;
+    }
+
+
+    #button-join-now-header{
+        display: none;
+    }
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    /* Estilos para smartphones grandes en modo portrait */
+}

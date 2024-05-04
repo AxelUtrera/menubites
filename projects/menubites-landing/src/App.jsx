@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div style={{width: '100%', display:"grid", placeItems: "center"}}>
         <Header></Header>
       </div>
     </>
