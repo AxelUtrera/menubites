@@ -1,0 +1,115 @@
+#body-container {
+    width: 80%;
+}
+
+#first-section-container {
+    display: flex;
+    flex-direction: row;
+}
+
+#container-paragraph {
+    max-width: 50%;
+    display: grid;
+}
+
+#menubites-principal-logo {
+    /* Estilos para el logo principal de MenuBites */
+}
+
+#slogan{
+    font-weight: 500;
+    margin-top: 10px;
+    display: block;
+}
+
+#slogan-description{
+    margin-top: 10px;
+}
+
+
+#gift-container{
+    width: 50%;
+    display: grid;
+    place-items: center;
+}
+
+#cocking-gift {
+    max-width: 415px;
+    height: auto;
+}
+
+.body-button{
+    display: grid;
+    place-content: start;
+    margin-top: 65px;
+}
+
+#button-join-now {
+    width: 185px;
+    height: 35px;
+    border-radius: 10px;
+    float: right;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#arrow-container{
+    display: grid;
+    place-items: center;
+}
+
+#arrow-gift{
+    max-width: 80px;
+    height: auto;
+}
+
+#button-join-now:hover{
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
+    background-image: linear-gradient(to right, #e01111, #e76101);
+}
+
+@media screen and (max-width: 600px) {
+    #first-section-container{
+        margin-top: 80px;
+        flex-direction: column;
+    }
+
+    #gift-container{
+        width: 100%;
+        display: grid;
+        place-items: center;
+    }
+
+    #container-paragraph {
+        max-width: 100%;
+        place-items: center;
+    }
+
+    #cocking-gift {
+        max-width: 210px;
+        height: auto;
+    }
+
+    #slogan{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    #slogan-description{
+        font-size: 22px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .body-button{
+        place-content: center;
+    }
+
+    #menubites-principal-logo {
+        font-size: 36px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    max-height: 120px;
+}
