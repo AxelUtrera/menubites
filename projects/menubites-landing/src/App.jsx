@@ -9,11 +9,6 @@ function App() {
   return (
       <>
           <div style={{
-              backgroundImage: 'linear-gradient(to right bottom, #FFFFFF, #D7D7D7)',
-              backgroundSize: '100% 100%',
-              backgroundPosition: 'center left',
-              backgroundRepeat: 'no-repeat',
-              minHeight: '100vh',
               width: '100%', display: "grid",
               placeItems: "center"
           }}>
@@ -24,4 +19,11 @@ function App() {
   )
 }
 
+
+//body{
+//     background-image: linear-gradient(to right bottom, #FFFFFF, #D7D7D7);
+//     width: 100%;
+//     display: grid;
+//     place-items: center;
+// }
 export default App

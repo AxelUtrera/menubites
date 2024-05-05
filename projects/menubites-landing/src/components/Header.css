@@ -1,6 +1,6 @@
 
 .buttonLink {
-    font-family: Ubuntu;
+    font-family: Ubuntu, sans-serif;
     color: var(--black-color);
     font-size: 16px;
     border-bottom: 2px solid transparent;
@@ -59,7 +59,7 @@
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 770px) {
     #header-container{
         display: none;
     }
@@ -67,6 +67,12 @@
 }
 
 
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    max-height: 120px;
+@media screen and (min-width: 820px) and (max-width: 1150px) {
+    #nav-buttons{
+        display: none;
+    }
+
+    #header-items-container{
+        justify-content: space-between;
+    }
 }
