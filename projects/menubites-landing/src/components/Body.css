@@ -67,6 +67,33 @@
     background-image: linear-gradient(to right, #e01111, #e76101);
 }
 
+#second-section-container{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 255px;
+}
+
+
+.card-image{
+    max-width: 100px;
+}
+
+.card-title, .card-description{
+    text-align: center;
+}
+
+
+
+
 @media screen and (max-width: 600px) {
     #first-section-container{
         margin-top: 80px;
