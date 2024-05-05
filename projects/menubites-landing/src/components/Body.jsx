@@ -75,13 +75,15 @@ const SecondSection = () => {
 const InfoCard = ({description, title, urlImage}) => {
     return (
         <div className='info-card-container'>
-            <img className='card-image' src={urlImage} alt='card image'/>
-            <Text className='card-title' fontFamily='Noto sans, sans serif' fontSize='18px'>
-                {title}
-            </Text>
-            <Text className='card-description' fontFamily='Noto sans, sans serif' fontSize='16px'>
-                {description}
-            </Text>
+            <div className='card-background'>
+                <img className='card-image' src={urlImage} alt='card image'/>
+                <Text className='card-title' fontFamily='Noto sans, sans serif'>
+                    {title}
+                </Text>
+                <Text className='card-description' fontFamily='Noto sans, sans serif'>
+                    {description}
+                </Text>
+            </div>
         </div>
     );
 }
