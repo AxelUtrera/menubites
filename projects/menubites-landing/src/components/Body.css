@@ -1,5 +1,6 @@
 #body-container {
     width: 80%;
+    margin-top: 80px
 }
 
 #first-section-container {
@@ -67,16 +68,13 @@
     background-image: linear-gradient(to right, #e01111, #e76101);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1023px) {
     #first-section-container{
-        margin-top: 80px;
         flex-direction: column;
     }
 
     #gift-container{
         width: 100%;
-        display: grid;
-        place-items: center;
     }
 
     #container-paragraph {
@@ -85,7 +83,7 @@
     }
 
     #cocking-gift {
-        max-width: 210px;
+        max-width: 100%;
         height: auto;
     }
 
@@ -109,7 +107,9 @@
     }
 }
 
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    max-height: 120px;
+@media screen and (min-width: 760px) and (max-width: 1023px){
+    #cocking-gift {
+        max-width: 50%;
+        height: auto;
+    }
 }
