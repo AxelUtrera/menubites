@@ -55,8 +55,8 @@ const JoinNowHeaderButton =() => {
 const Logo = () => {
     return (
         <div id='logo-box'>
-            <img src={logoSVG} alt="MenuBites logo"/>
-            <div id='letters-logo' w='80px' marginleft='10px'>
+            <img src={logoSVG} alt="MenuBites logo" loading="lazy"/>
+            <div id='letters-logo' marginleft='10px'>
                 <Text fontFamily="Lobster" fontSize='20px'>
                     MenuBites
                 </Text>

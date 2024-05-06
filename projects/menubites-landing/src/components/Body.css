@@ -1,5 +1,6 @@
 #body-container {
     width: 80%;
+    margin-top: 80px
 }
 
 #first-section-container {
@@ -60,6 +61,7 @@
 #arrow-gift{
     max-width: 80px;
     height: auto;
+    margin-top: 30px;
 }
 
 #button-join-now:hover{
@@ -67,16 +69,66 @@
     background-image: linear-gradient(to right, #e01111, #e76101);
 }
 
-@media screen and (max-width: 600px) {
-    #first-section-container{
-        margin-top: 80px;
+#second-section-container{
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: space-between;
+}
+
+.info-card-container{
+    display: grid;
+    place-items: center;
+    width: 290px;
+    height: auto;
+    background: var(--color-gradient);
+    border-radius: 12px;
+}
+
+.card-background{
+    display: grid;
+    place-items: center;
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+    padding: 15px 20px;
+    border-radius: 10px;
+    background: white;
+}
+
+.card-image{
+    max-width: 100px;
+}
+
+.card-title, .card-description{
+    text-align: center;
+}
+
+.card-title{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.card-description{
+    color: #6C6C6C;
+    font-size: 18px;
+}
+
+
+@media screen and (max-width: 1023px) {
+    #first-section-container {
         flex-direction: column;
     }
 
-    #gift-container{
+    #second-section-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+
+    #gift-container {
         width: 100%;
-        display: grid;
-        place-items: center;
     }
 
     #container-paragraph {
@@ -85,31 +137,47 @@
     }
 
     #cocking-gift {
-        max-width: 210px;
+        max-width: 100%;
         height: auto;
     }
 
-    #slogan{
+    #slogan {
         font-size: 28px;
         text-align: center;
     }
 
-    #slogan-description{
+    #slogan-description {
         font-size: 22px;
         text-align: center;
         margin-top: 25px;
     }
 
-    .body-button{
+    .body-button {
         place-content: center;
     }
 
     #menubites-principal-logo {
         font-size: 36px;
     }
+
+    .info-card-container {
+        width: 80%;
+        height: auto;
+    }
+
+    .card-title{
+        font-size: 26px;
+    }
+
+    .card-description{
+        font-size: 20px;
+    }
 }
 
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    max-height: 120px;
+@media screen and (min-width: 760px) and (max-width: 1023px){
+    #cocking-gift {
+        max-width: 50%;
+        height: auto;
+    }
 }
+

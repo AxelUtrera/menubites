@@ -1,9 +1,11 @@
 import {Text} from "@chakra-ui/react";
-import cockingGift from '../assets/Cooking.gif'
-import arrowGift from '../assets/Down-arrow.gif'
 import '../index.css'
 import './Body.css'
-
+import cockingGift from '../assets/Cooking.gif'
+import arrowGift from '../assets/Down-arrow.gif'
+import functionalImage from '../assets/img/Functional.svg'
+import easyImage from '../assets/img/Easy.svg'
+import fastImage from '../assets/img/Fast.svg'
 
 
 const Body = () => {
@@ -11,6 +13,7 @@ const Body = () => {
         <div id='body-container'>
             <FirstSection/>
             <DownArrow/>
+            <SecondSection/>
         </div>
     );
 }
@@ -48,7 +51,7 @@ const JoinNowBodyButton =() => {
                 Join Waitlist
             </button>
         </div>
-    )
+    );
 }
 
 const DownArrow = () => {
@@ -59,7 +62,31 @@ const DownArrow = () => {
     );
 }
 
+const SecondSection = () => {
+    return (
+        <div id="second-section-container">
+            <InfoCard title='Functional' description='Get personalized recipes tailored to your unique style' urlImage={functionalImage}/>
+            <InfoCard title='Easy' description='Enjoy easy cooking with our simple-to-follow recipes' urlImage={easyImage}/>
+            <InfoCard title='Fast' description='Find quick recipes for speedy meal solutions' urlImage={fastImage}/>
+        </div>
+    );
+}
 
+const InfoCard = ({description, title, urlImage}) => {
+    return (
+        <div className='info-card-container'>
+            <div className='card-background'>
+                <img className='card-image' src={urlImage} alt='card image'/>
+                <Text className='card-title' fontFamily='Noto sans, sans serif'>
+                    {title}
+                </Text>
+                <Text className='card-description' fontFamily='Noto sans, sans serif'>
+                    {description}
+                </Text>
+            </div>
+        </div>
+    );
+}
 
 
 export default Body;
