@@ -7,7 +7,7 @@ import twitterIcon from '../assets/img/TwitterIcon.svg'
 
 const Footer = () => {
     return (
-        <div id="footer-container">
+        <div id="contact-us">
             <Text id='follow-us-text' fontFamily='noto sans' fontSize='18'>
                 Follow us on social media
             </Text>

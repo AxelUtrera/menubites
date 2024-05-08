@@ -20,7 +20,7 @@ const Body = () => {
 
 const FirstSection = () => {
     return (
-        <div id="first-section-container">
+        <div id="home">
             <div id='container-paragraph'>
                 <Text id='menubites-principal-logo' fontFamily='Lobster' fontSize='50px'>
                     MenuBites

@@ -3,7 +3,7 @@ import './Header.css'
 import '../index.css'
 import {Text} from "@chakra-ui/react";
 import logoSVG from '../assets/img/Logo.svg'
-
+import {homeRoute, aboutRoute, featureRoute, contactUsRoute} from "../App.jsx";
 
 
 const Header = () => {
@@ -19,7 +19,6 @@ const Header = () => {
 }
 
 const NavButtons = () => {
-    const homeRoute = '#home'
 
     return (
         <div id="nav-buttons">
@@ -27,13 +26,13 @@ const NavButtons = () => {
                 <ButtonLink route={homeRoute} text="Home" />
             </div>
             <div className="nav-button">
-                <ButtonLink route={homeRoute} text="About" />
+                <ButtonLink route={aboutRoute} text="About" />
             </div>
             <div className="nav-button">
-                <ButtonLink route={homeRoute} text="Feature" />
+                <ButtonLink route={featureRoute} text="Feature" />
             </div>
             <div className="nav-button">
-                <ButtonLink route={homeRoute} text="Contact Us" />
+                <ButtonLink route={contactUsRoute} text="Contact Us" />
             </div>
         </div>
     );
