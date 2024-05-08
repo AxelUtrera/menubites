@@ -2,11 +2,21 @@ import { useState } from 'react'
 import './App.css'
 import Header from './components/Header.jsx'
 import Body from "./components/Body.jsx";
+import Footer from "./components/Footer.jsx";
+import CallToAction from "./components/CallToAction.jsx";
+
+
+export const homeRoute = '#home'
+export const aboutRoute = '#about'
+export const featureRoute = '#feature'
+export const contactUsRoute = '#contact-us'
+
 
 function App() {
   const [count, setCount] = useState(0)
 
-  return (
+
+    return (
       <>
           <div style={{
               width: '100%', display: "grid",
@@ -14,6 +24,8 @@ function App() {
           }}>
               <Header></Header>
               <Body></Body>
+              <CallToAction/>
+              <Footer></Footer>
           </div>
       </>
   )

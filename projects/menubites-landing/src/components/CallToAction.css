@@ -1,0 +1,96 @@
+#call-to-action-container {
+    width: 80%;
+    display: grid;
+    place-items: center ;
+}
+
+#text-describes-form-container {
+    display: grid;
+    place-items: center;
+    padding-top: 100px;
+}
+
+#are-interested-text {
+    font-size: 36px;
+    font-family: Ubuntu, sans-serif;
+    text-align: center;
+}
+
+#call-to-action {
+    font-size: 26px;
+    font-family: noto sans, sans-serif;
+    text-align: center;
+}
+
+#form {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+
+#email-text {
+    width: 70%;
+    border: 2px solid black;
+    border-radius: 10px;
+    height: 35px;
+    padding-left: 17px;
+    font-weight: 500;
+}
+
+#input-group{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#email-text-label{
+    font-family: Ubuntu, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+#submit-button {
+    background-image: var(--color-gradient);
+    margin-top: 35px;
+    color: white;
+    height: 30px;
+    width: 150px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1023px) {
+    #are-interested-text{
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    #call-to-action {
+        font-size: 18px;
+    }
+
+    #email-text-label{
+        margin-right: 5px;
+    }
+
+    #input-group{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #email-text {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+}

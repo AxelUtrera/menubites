@@ -12,3 +12,7 @@
   --black-color: #000000;
   --color-white: #E9E9E9;
 }
+
+html{
+  scroll-behavior: smooth;
+}
