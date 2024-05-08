@@ -44,10 +44,12 @@ const FirstSection = () => {
 const JoinNowBodyButton =() => {
     return (
         <div className="body-button">
-            <button id="button-join-now" style={{
+            <button id="button-join-now" onClick={() => navigateToSection('call-to-action-container')}
+                    style={{
                 background: 'var(--color-gradient)',
                 color: 'var(--color-white)',
-            }}>
+            }}
+            >
                 Join Waitlist
             </button>
         </div>
@@ -88,5 +90,11 @@ const InfoCard = ({description, title, urlImage}) => {
     );
 }
 
+export const navigateToSection = (sectionId) => {
+    const sectionElement = document.getElementById(sectionId);
+    if (sectionElement) {
+        sectionElement.scrollIntoView({ behavior: 'smooth' });
+    }
+}
 
 export default Body;

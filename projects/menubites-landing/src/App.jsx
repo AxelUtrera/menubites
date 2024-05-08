@@ -8,8 +8,8 @@ import AviableOn from "./components/AviableOn.jsx";
 
 
 export const homeRoute = '#home'
-export const aboutRoute = '#about'
 export const featureRoute = '#feature'
+export const aviableOnRoute = '#aviable-on'
 export const contactUsRoute = '#contact-us'
 
 
