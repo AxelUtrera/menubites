@@ -3,7 +3,8 @@ import './Header.css'
 import '../index.css'
 import {Text} from "@chakra-ui/react";
 import logoSVG from '../assets/img/Logo.svg'
-import {homeRoute, aboutRoute, featureRoute, contactUsRoute} from "../App.jsx";
+import {homeRoute, aviableOnRoute, featureRoute, contactUsRoute} from "../App.jsx";
+import {navigateToSection} from "./Body.jsx";
 
 
 const Header = () => {
@@ -26,10 +27,10 @@ const NavButtons = () => {
                 <ButtonLink route={homeRoute} text="Home" />
             </div>
             <div className="nav-button">
-                <ButtonLink route={aboutRoute} text="About" />
+                <ButtonLink route={featureRoute} text="Feature" />
             </div>
             <div className="nav-button">
-                <ButtonLink route={featureRoute} text="Feature" />
+                <ButtonLink route={aviableOnRoute} text="Aviable on" />
             </div>
             <div className="nav-button">
                 <ButtonLink route={contactUsRoute} text="Contact Us" />
@@ -44,7 +45,8 @@ const JoinNowHeaderButton =() => {
             <button id="button-join-now-header" style={{
                 background: 'var(--color-gradient)',
                 color: 'var(--color-white)',
-            }}>
+            }}
+                    onClick={() => navigateToSection('call-to-action-container')}>
                 Join Now
             </button>
         </div>

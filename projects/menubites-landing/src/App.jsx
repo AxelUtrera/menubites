@@ -4,11 +4,12 @@ import Header from './components/Header.jsx'
 import Body from "./components/Body.jsx";
 import Footer from "./components/Footer.jsx";
 import CallToAction from "./components/CallToAction.jsx";
+import AviableOn from "./components/AviableOn.jsx";
 
 
 export const homeRoute = '#home'
-export const aboutRoute = '#about'
 export const featureRoute = '#feature'
+export const aviableOnRoute = '#aviable-on'
 export const contactUsRoute = '#contact-us'
 
 
@@ -24,6 +25,7 @@ function App() {
           }}>
               <Header></Header>
               <Body></Body>
+              <AviableOn/>
               <CallToAction/>
               <Footer></Footer>
           </div>
