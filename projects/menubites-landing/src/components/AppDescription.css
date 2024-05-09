@@ -1,0 +1,73 @@
+#app-description {
+    margin-top: 100px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.section-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+}
+
+.section-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-section {
+}
+
+.section-text-container {
+    width: 50%;
+}
+
+.title-section{
+    font-family: Ubuntu, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+
+}
+
+.description-section {
+    margin-top: 30px;
+    font-family: noto sans, sans-serif;
+    font-size: 22px;
+}
+
+.section-container:nth-child(2),
+.section-container:nth-child(4){
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-width: 1023px) {
+    .section-container,
+    .section-container:nth-child(2),
+    .section-container:nth-child(4){
+        flex-direction: column;
+    }
+
+    .title-section{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .description-section {
+        font-size: 18px;
+        margin-top: 25px;
+        text-align: center;
+    }
+
+    .section-text-container {
+        width: 100%;
+    }
+}
+
