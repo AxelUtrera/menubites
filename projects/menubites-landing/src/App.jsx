@@ -5,6 +5,7 @@ import Body from "./components/Body.jsx";
 import Footer from "./components/Footer.jsx";
 import CallToAction from "./components/CallToAction.jsx";
 import AviableOn from "./components/AviableOn.jsx";
+import AppDescription from "./components/AppDescription.jsx";
 
 
 export const homeRoute = '#home'
@@ -25,6 +26,7 @@ function App() {
           }}>
               <Header></Header>
               <Body></Body>
+              <AppDescription/>
               <AviableOn/>
               <CallToAction/>
               <Footer></Footer>
