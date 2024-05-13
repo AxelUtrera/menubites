@@ -4,42 +4,36 @@ import ingredientsImage from '../assets/img/IngredientsImage.png';
 import dishesImage from '../assets/img/DishesImage.png';
 import iconsImage from '../assets/img/IconsImage.png';
 import earthImage from '../assets/img/EarthImage.png';
+import { useTranslation } from "react-i18next";
 
 
 const AppDescription = () => {
+    const { t } = useTranslation();
     return (
         <div id="app-description">
             <Section
-                title="Get an endless variety of recipes"
-                description="With our AI-based technology, you can
-                easily access your favorite recipes tailored to your
-                unique taste preferences and dietary needs."
+                title={t("app_description_1_title")}
+                description={t("app_description_1_description")}
                 url={dishesImage}
-                alt="Dishes image"
+                alt={t("app_description_1_alt")}
             />
             <Section
-                title="Stay Updated with Daily Recipe Inspiration"
-                description="Subscribe to our newsletter and receive a daily dose
-                of customized recipes based on your taste preferences. Never run out
-                of culinary ideas with our AI-powered service."
+                title={t("app_description_2_title")}
+                description={t("app_description_2_description")}
                 url={iconsImage}
-                alt="Icons image"
+                alt={t("app_description_2_alt")}
             />
             <Section
-                title="Cook Smart with What You Have"
-                description="Generate delicious recipes using ingredients already in your kitchen.
-                Our app helps you cook creatively without the need to invest in ingredients you
-                already own!"
+                title={t("app_description_3_title")}
+                description={t("app_description_3_description")}
                 url={ingredientsImage}
-                alt="Ingredients image"
+                alt={t("app_description_3_alt")}
             />
             <Section
-                title="Discover Local Delights Effortlessly"
-                description="Unlock recipes tailored to your location and easily
-                access all the ingredients you need. Say goodbye to complex ingredient
-                searches and enjoy hassle-free cooking!"
+                title={t("app_description_4_title")}
+                description={t("app_description_4_description")}
                 url={earthImage}
-                alt="Earth image"
+                alt={t("app_description_4_alt")}
             />
         </div>
     );

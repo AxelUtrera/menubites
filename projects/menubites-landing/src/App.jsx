@@ -6,7 +6,7 @@ import Footer from "./components/Footer.jsx";
 import CallToAction from "./components/CallToAction.jsx";
 import AviableOn from "./components/AviableOn.jsx";
 import AppDescription from "./components/AppDescription.jsx";
-
+import "./i18n";
 
 export const homeRoute = '#home'
 export const featureRoute = '#feature'

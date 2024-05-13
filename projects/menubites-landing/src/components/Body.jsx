@@ -6,9 +6,11 @@ import arrowGift from '../assets/Down-arrow.gif'
 import functionalImage from '../assets/img/Functional.svg'
 import easyImage from '../assets/img/Easy.svg'
 import fastImage from '../assets/img/Fast.svg'
+import { useTranslation } from "react-i18next";
 
 
 const Body = () => {
+    const { t } = useTranslation();
     return (
         <div id='body-container'>
             <FirstSection/>
@@ -19,6 +21,7 @@ const Body = () => {
 }
 
 const FirstSection = () => {
+    const {t} = useTranslation()
     return (
         <div id="home">
             <div id='container-paragraph'>
@@ -26,10 +29,10 @@ const FirstSection = () => {
                     MenuBites
                 </Text>
                 <Text id='slogan' fontFamily='Ubuntu' fontSize='32px'>
-                    Culinary AI crafts recipes to suit your location and tastes.
+                    {t("body_slogan")}
                 </Text>
                 <Text id='slogan-description' fontFamily='Noto sans' fontSize='22px'>
-                    Generates personalized recipes by AI, tailored to your ingredients, local produce, or favorite cuisine, ensuring a delightful culinary experience within your budget.
+                    {t("body_slogan_description")}
                </Text>
                 <JoinNowBodyButton/>
             </div>
@@ -42,6 +45,7 @@ const FirstSection = () => {
 
 
 const JoinNowBodyButton =() => {
+    const {t} = useTranslation()
     return (
         <div className="body-button">
             <button id="button-join-now" onClick={() => navigateToSection('call-to-action-container')}
@@ -50,7 +54,7 @@ const JoinNowBodyButton =() => {
                 color: 'var(--color-white)',
             }}
             >
-                Join Waitlist
+                {t("body_join_waitlist")}
             </button>
         </div>
     );
@@ -65,11 +69,12 @@ const DownArrow = () => {
 }
 
 const SecondSection = () => {
+    const {t} = useTranslation()
     return (
         <div id="second-section-container">
-            <InfoCard title='Functional' description='Get personalized recipes tailored to your unique style' urlImage={functionalImage}/>
-            <InfoCard title='Easy' description='Enjoy easy cooking with our simple-to-follow recipes' urlImage={easyImage}/>
-            <InfoCard title='Fast' description='Find quick recipes for speedy meal solutions' urlImage={fastImage}/>
+            <InfoCard title={t("body_info_card_1_title")} description={t("body_info_card_1_description")}  urlImage={functionalImage}/>
+            <InfoCard title={t("body_info_card_2_title")} description={t("body_info_card_2_description")}  urlImage={easyImage}/>
+            <InfoCard title={t("body_info_card_3_title")} description={t("body_info_card_3_description")}  urlImage={fastImage}/>
         </div>
     );
 }
