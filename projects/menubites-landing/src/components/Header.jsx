@@ -5,7 +5,7 @@ import {Text} from "@chakra-ui/react";
 import logoSVG from '../assets/img/Logo.svg'
 import {homeRoute, aviableOnRoute, featureRoute, contactUsRoute} from "../App.jsx";
 import {navigateToSection} from "./Body.jsx";
-
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
     return (
@@ -20,26 +20,27 @@ const Header = () => {
 }
 
 const NavButtons = () => {
-
+    const {t} = useTranslation()
     return (
         <div id="nav-buttons">
             <div className="nav-button">
-                <ButtonLink route={homeRoute} text="Home" />
+                <ButtonLink route={homeRoute} text={t("header_home")} />
             </div>
             <div className="nav-button">
-                <ButtonLink route={featureRoute} text="Feature" />
+                <ButtonLink route={featureRoute} text={t("header_feature")} />
             </div>
             <div className="nav-button">
-                <ButtonLink route={aviableOnRoute} text="Aviable on" />
+                <ButtonLink route={aviableOnRoute} text={t("header_aviable")} />
             </div>
             <div className="nav-button">
-                <ButtonLink route={contactUsRoute} text="Contact Us" />
+                <ButtonLink route={contactUsRoute} text={t("header_contact")} />
             </div>
         </div>
     );
 };
 
 const JoinNowHeaderButton =() => {
+    const {t} = useTranslation()
     return (
         <div className="nav-button">
             <button id="button-join-now-header" style={{
@@ -47,7 +48,7 @@ const JoinNowHeaderButton =() => {
                 color: 'var(--color-white)',
             }}
                     onClick={() => navigateToSection('call-to-action-container')}>
-                Join Now
+                {t("header_join_now")}
             </button>
         </div>
     )

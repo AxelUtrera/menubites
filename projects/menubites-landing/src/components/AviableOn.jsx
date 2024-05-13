@@ -2,12 +2,14 @@ import {Text} from "@chakra-ui/react"
 import "./AviableOn.css"
 import googlePlayIcon from "../assets/img/PlaystoreIcon.svg"
 import appleStoreIcon from "../assets/img/AppleStoreIcon.svg"
+import { useTranslation } from "react-i18next";
 
 const AviableOn = () => {
+    const { t } = useTranslation();
     return (
         <div id="aviable-on">
             <Text id="description-aviable-on">
-                Comming soon aviable for...
+                {t("aviable_on_aviable_soon")}
             </Text>
             <div id="container-cards">
                 <PlaceCard name="Google Play" url={googlePlayIcon} alt="Icono de Google play"/>
