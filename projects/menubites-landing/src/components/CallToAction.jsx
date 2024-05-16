@@ -30,14 +30,26 @@ const TextDescribesForm = () => {
 const Form = () => {
     const { t } = useTranslation();
     return (
-        <form id='form'>
+        <form id='form' onSubmit={(e) => submit(e)}>
             <div id="input-group">
-                <label id="email-text-label" for="email-text">Email:</label>
-                <input id="email-text" type="email" name="email" placeholder={t("call_to_action_email_placeholder")} />
+                <label id="email-text-label" htmlFor="email-text">Email:</label>
+                <input id="email-text" type="email" name="Email" placeholder={t("call_to_action_email_placeholder")} />
             </div>
             <input id="submit-button" type="submit" value={t("call_to_action_email_submit")}/>
         </form>
     );
 }
+
+const submit = (e) => {
+    e.preventDefault();
+    const formElement = document.querySelector("form");
+    let formData = new FormData(formElement)
+
+    fetch("https://script.google.com/macros/s/AKfycbz0ES75Hp8Ujahmefm1Od-_xkhKIr0q795_RA10SDeXkGCBPn8bfXcd3Mw3hGDVRrjRbQ/exec", {
+        method: "POST",
+        body: formData
+    }).catch((error) => console.error(error));
+}
+
 
 export default CallToAction;
