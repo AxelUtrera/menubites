@@ -43,14 +43,13 @@ const Form = () => {
 const submit = (e) => {
     e.preventDefault();
     const formElement = document.querySelector("form");
-    let formData = new FormData(formElement)
-
-    fetch("https://script.google.com/macros/s/AKfycbz0ES75Hp8Ujahmefm1Od-_xkhKIr0q795_RA10SDeXkGCBPn8bfXcd3Mw3hGDVRrjRbQ/exec", {
+    let formData = new FormData(formElement);
+    fetch("https://script.google.com/macros/s/AKfycbz0ES75Hp8Ujahmefm1Od-_xkhKIr0q795_RA10SDeXkGCBPn8bfXcd3Mw3hGDVRrjRbQ/exec",{
         method: "POST",
         body: formData
-    }).catch((error) => console.error(error));
-
+    }).then((response) => response.json()).then((data) => {
+        console.log(data)
+    }).catch((error) => console.log(error));
 }
-
 
 export default CallToAction;
