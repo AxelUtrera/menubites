@@ -31,6 +31,15 @@
     "call_to_action_call_to": "Join our waitlist to be the first to receive updates about our product.",
     "call_to_action_email_placeholder": "Enter your email here.",
     "call_to_action_email_submit": "Submit",
+    "call_to_action_title_alert_email_submit_ok" : "Success!",
+    "call_to_action_title_alert_email_submit_error" : "Oooops there was an error D:",
+    "call_to_action_text_alert_email_submit_ok" : "Your email was registered",
+    "call_to_action_text_alert_email_submit_error" : "We're working on solve it!",
+    "call_to_action_button_content_alert_email_submit" : "Ok",
+    "call_to_action_title_alert_email_submit_empty_email" : "Email Required",
+    "call_to_action_text_alert_email_submit_empty_email" : "Please enter your email address before submitting the form.",
+
+
 
 
     "footer_follow_us": "Follow us on social media",

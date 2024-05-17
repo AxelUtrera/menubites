@@ -1,9 +1,9 @@
 {
     "app_description_1_title": "Obtén una variedad sin fin de recetas",
-    "app_description_1_description": "Con nuestra tecnología basada en IA, puede acceder fácilmente a sus recetas favoritas adaptadas a sus preferencias de sabor y necesidades dietéticas únicas.",
+    "app_description_1_description": "Con nuestra tecnología basada en IA, puedes acceder fácilmente a sus recetas favoritas adaptadas a tus preferencias de sabor y necesidades dietéticas únicas.",
     "app_description_1_alt": "Imagen de platillos",
 
-    "app_description_2_title": "Manténgase actualizado con inspiración de recetas diarias",
+    "app_description_2_title": "Mantente actualizado con inspiración de recetas diarias",
     "app_description_2_description": "Suscríbete a nuestras noticias y recibe una dosis diaria de recetas personalizadas según tus preferencias gustativas. Nunca te quedes sin ideas culinarias con nuestro servicio impulsado por IA.",
     "app_description_2_alt": "Imagen de iconos",
 
@@ -11,26 +11,34 @@
     "app_description_3_description": "Genera deliciosas recetas utilizando ingredientes que ya tienes en tu cocina. ¡Nuestra aplicación te ayuda a cocinar de forma creativa sin la necesidad de invertir en ingredientes que ya tienes!",
     "app_description_3_alt": "Imagen de ingredientes",
 
-    "app_description_4_title": "Descubra las delicias locales sin esfuerzo",
-    "app_description_4_description": "Desbloquea recetas adaptadas a tu ubicación y accede fácilmente a todos los ingredientes que necesitas. ¡Diga adiós a las búsquedas complejas de ingredientes y disfrute de cocinar sin problemas!",
+    "app_description_4_title": "Descubre las delicias locales sin esfuerzo",
+    "app_description_4_description": "Accede a recetas personalizadas según tu ubicación y encuentra todos los ingredientes fácilmente. ¡Di adiós a las tediosas búsquedas de ingredientes y disfruta de cocinar sin complicaciones.",
     "app_description_4_alt": "Earth image",
 
     "aviable_on_aviable_soon": "Disponible proximamente en...",
 
     "body_slogan": "La IA culinaria elabora recetas que se adaptan a su ubicación y gustos.",
-    "body_slogan_description": "Genera recetas personalizadas mediante IA, adaptadas a sus ingredientes, productos locales o cocina favorita, garantizando una experiencia culinaria deliciosa dentro de su presupuesto.",
+    "body_slogan_description": "Genera recetas personalizadas mediante IA, adaptadas a tus ingredientes, productos locales o cocina favorita, garantizando una experiencia culinaria deliciosa dentro de su presupuesto.",
     "body_info_card_1_title": "Funcional",
-    "body_info_card_1_description": "Obtenga recetas personalizadas adaptadas a su estilo único",
+    "body_info_card_1_description": "Obten recetas personalizadas adaptadas a tu estilo único",
     "body_info_card_2_title": "Fácil",
-    "body_info_card_2_description": "Disfrute de una cocina fácil con nuestras recetas fáciles de seguir.",
+    "body_info_card_2_description": "Disfruta de una cocina fácil con nuestras recetas fáciles de seguir.",
     "body_info_card_3_title": "Rápido",
-    "body_info_card_3_description": "Encuentre recetas rápidas para soluciones de comidas rápidas",
-    "body_join_waitlist": "Únete a la lista de espera",
+    "body_info_card_3_description": "Encuentra recetas rápidas para soluciones de comidas rápidas",
+    "body_join_waitlist": "Únete a la espera",
 
     "call_to_action_are_interested": "¿Te interesa?",
-    "call_to_action_call_to": "Únase a nuestra lista de espera para ser el primero en recibir actualizaciones sobre nuestro producto.",
+    "call_to_action_call_to": "Únete a nuestra lista de espera para ser el primero en recibir actualizaciones sobre nuestro producto.",
     "call_to_action_email_placeholder": "Introduzca su correo electrónico aquí.",
     "call_to_action_email_submit": "Enviar",
+    "call_to_action_title_alert_email_submit_ok" : "¡Excelente!",
+    "call_to_action_title_alert_email_submit_error" : "Rayos hubo un error D:",
+    "call_to_action_text_alert_email_submit_ok" : "Hemos guardado tu email. pronto sabras de nosotros",
+    "call_to_action_text_alert_email_submit_error" : "Estamos trabajando para solucionarlo, intentalo de nuevo mas tarde.",
+    "call_to_action_button_content_alert_email_submit" : "Aceptar",
+    "call_to_action_title_alert_email_submit_empty_email" : "Tu email es requerido",
+    "call_to_action_text_alert_email_submit_empty_email" : "Parece que aun no has ingresado tu email, ingresalo e intentalo de nuevo.",
+
 
 
     "footer_follow_us": "Síguenos en redes sociales",
