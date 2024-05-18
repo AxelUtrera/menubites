@@ -29,8 +29,7 @@ const MediaIconsContainer = () => {
     return (
         <div id='media-icons-container'>
             <MediaIcon linkIcon={instagramIcon} altIcon='Instagram icon' linkTo='https://www.instagram.com'></MediaIcon>
-            <MediaIcon linkIcon={facebookIcon} altIcon='Facebook icon' linkTo='https://www.facebook.com'></MediaIcon>
-            <MediaIcon linkIcon={twitterIcon} altIcon='Twitter icon' linkTo='https://www.x.com'></MediaIcon>
+            <MediaIcon linkIcon={facebookIcon} altIcon='Facebook icon' linkTo='https://www.facebook.com/profile.php?id=61559733816179'></MediaIcon>
         </div>
     );
 }
