@@ -65,12 +65,12 @@ const SectionImage = ({url, alt, titleImage}) => {
 const SectionText = ({title, description}) => {
     return (
         <div className="section-text-container">
-            <Text className="title-section">
+            <h2 className="title-section">
                 {title}
-            </Text>
-            <Text className="description-section">
+            </h2>
+            <h3 className="description-section">
                 {description}
-            </Text>
+            </h3>
         </div>
     );
 }

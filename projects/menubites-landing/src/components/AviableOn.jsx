@@ -8,9 +8,9 @@ const AviableOn = () => {
     const { t } = useTranslation();
     return (
         <div id="aviable-on">
-            <Text id="description-aviable-on">
+            <h2 id="description-aviable-on">
                 {t("aviable_on_aviable_soon")}
-            </Text>
+            </h2>
             <div id="container-cards">
                 <PlaceCard name="Google Play" url={googlePlayIcon} alt="Icono de Google play"/>
                 <PlaceCard name="App Store" url={appleStoreIcon} alt="Icono de Apple Store"/>
@@ -23,9 +23,9 @@ const PlaceCard = ({url, alt, name}) => {
     return (
         <div className="place-container">
             <img className="place-image" src={url} alt={alt}/>
-            <Text className="place-name">
+            <h4 className="place-name">
                 {name}
-            </Text>
+            </h4>
         </div>
     );
 }
