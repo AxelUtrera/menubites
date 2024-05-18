@@ -28,7 +28,7 @@ const Footer = () => {
 const MediaIconsContainer = () => {
     return (
         <div id='media-icons-container'>
-            <MediaIcon linkIcon={instagramIcon} altIcon='Instagram icon' linkTo='https://www.instagram.com'></MediaIcon>
+            <MediaIcon linkIcon={instagramIcon} altIcon='Instagram icon' linkTo='https://www.instagram.com/menubites.app/'></MediaIcon>
             <MediaIcon linkIcon={facebookIcon} altIcon='Facebook icon' linkTo='https://www.facebook.com/profile.php?id=61559733816179'></MediaIcon>
         </div>
     );
