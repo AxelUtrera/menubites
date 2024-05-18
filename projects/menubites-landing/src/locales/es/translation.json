@@ -1,4 +1,5 @@
 {
+    "metaDescription": "Descubre deliciosas recetas adaptadas a tu ubicación y accede fácilmente a todos los ingredientes que necesitas con MenuBites. ¡Di adiós a las búsquedas complejas de ingredientes y disfruta de cocinar sin problemas!",
     "app_description_1_title": "Obtén una variedad sin fin de recetas",
     "app_description_1_description": "Con nuestra tecnología basada en IA, puedes acceder fácilmente a sus recetas favoritas adaptadas a tus preferencias de sabor y necesidades dietéticas únicas.",
     "app_description_1_alt": "Imagen de platillos",
@@ -29,7 +30,7 @@
 
     "call_to_action_are_interested": "¿Te interesa?",
     "call_to_action_call_to": "Únete a nuestra lista de espera para ser el primero en recibir actualizaciones sobre nuestro producto.",
-    "call_to_action_email_placeholder": "Introduzca su correo electrónico aquí.",
+    "call_to_action_email_placeholder": "ejemplo@menubites.site",
     "call_to_action_email_submit": "Enviar",
     "call_to_action_title_alert_email_submit_ok" : "¡Excelente!",
     "call_to_action_title_alert_email_submit_error" : "Rayos hubo un error D:",
