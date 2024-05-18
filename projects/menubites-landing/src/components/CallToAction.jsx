@@ -18,9 +18,9 @@ const TextDescribesForm = () => {
     const { t } = useTranslation();
     return (
         <div id="text-describes-form-container">
-            <Text id="are-interested-text">
+            <h2 id="are-interested-text">
                 {t("call_to_action_are_interested")}
-            </Text>
+            </h2>
             <Text id="call-to-action">
             {t("call_to_action_call_to")}
             </Text>

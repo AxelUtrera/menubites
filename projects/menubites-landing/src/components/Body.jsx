@@ -28,16 +28,16 @@ const FirstSection = () => {
                 <Text id='menubites-principal-logo' fontFamily='Lobster' fontSize='50px'>
                     MenuBites
                 </Text>
-                <Text id='slogan' fontFamily='Ubuntu' fontSize='32px'>
+                <h1 id='slogan' fontFamily='Ubuntu' fontSize='32px'>
                     {t("body_slogan")}
-                </Text>
+                </h1>
                 <Text id='slogan-description' fontFamily='Noto sans' fontSize='22px'>
                     {t("body_slogan_description")}
                </Text>
                 <JoinNowBodyButton/>
             </div>
             <div id='gift-container'>
-                <img id='cocking-gift' src={cockingGift} alt='Coocking gift'/>
+                <img id='cocking-gift' src={cockingGift} alt='Coocking gift' title="Woman coocking"/>
             </div>
         </div>
     );
@@ -63,7 +63,7 @@ const JoinNowBodyButton =() => {
 const DownArrow = () => {
     return (
         <div id='arrow-container'>
-            <img id='arrow-gift' src={arrowGift} alt='gift down arrow'/>
+            <img id='arrow-gift' src={arrowGift} alt='gift down arrow' title="arrow to navigate down"/>
         </div>
     );
 }

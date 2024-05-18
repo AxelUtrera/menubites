@@ -16,44 +16,48 @@ const AppDescription = () => {
                 description={t("app_description_1_description")}
                 url={dishesImage}
                 alt={t("app_description_1_alt")}
+                titleImage="Dishes on a table"
             />
             <Section
                 title={t("app_description_2_title")}
                 description={t("app_description_2_description")}
                 url={iconsImage}
                 alt={t("app_description_2_alt")}
+                titleImage="ingredients for a recipe"
             />
             <Section
                 title={t("app_description_3_title")}
                 description={t("app_description_3_description")}
                 url={ingredientsImage}
                 alt={t("app_description_3_alt")}
+                titleImage="Icons to inspire coocking"
             />
             <Section
                 title={t("app_description_4_title")}
                 description={t("app_description_4_description")}
                 url={earthImage}
                 alt={t("app_description_4_alt")}
+                titleImage="Earth where i can coocking something"
             />
         </div>
     );
 }
 
-const Section = ({title, description, url, alt}) => {
+const Section = ({title, description, url, alt, titleImage}) => {
     return (
         <section className="section-container">
             <SectionText
                 title={title}
                 description={description}/>
-            <SectionImage url={url} alt={alt}/>
+            <SectionImage url={url} alt={alt} titleImage={titleImage}/>
         </section>
     );
 }
 
-const SectionImage = ({url, alt}) => {
+const SectionImage = ({url, alt, titleImage}) => {
     return (
       <div className="section-image-container">
-          <img src={url} alt={alt} className="image-section"/>
+          <img src={url} alt={alt} title={titleImage} className="image-section"/>
       </div>
     );
 }
@@ -61,12 +65,12 @@ const SectionImage = ({url, alt}) => {
 const SectionText = ({title, description}) => {
     return (
         <div className="section-text-container">
-            <Text className="title-section">
+            <h2 className="title-section">
                 {title}
-            </Text>
-            <Text className="description-section">
+            </h2>
+            <h3 className="description-section">
                 {description}
-            </Text>
+            </h3>
         </div>
     );
 }
